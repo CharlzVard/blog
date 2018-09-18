@@ -66,5 +66,9 @@ class PageController extends Controller
             'delimiter'  => '',
             'tag' => $tag
         ]);
-    }
+		}
+		
+		public function about(){
+			return view('about');
+		} 
 }

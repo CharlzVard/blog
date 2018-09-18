@@ -40,6 +40,8 @@ Route::get('/article/{slug}', 'PageController@articleShow')->name('articleShow')
 Route::get('/articles', 'PageController@articles')->name('articles');
 Route::get('/tag/{tag}', 'PageController@tag')->name('tag');
 Route::get('/category/{slug}', 'PageController@category')->name('category');
+Route::get('/about', 'PageController@about')->name('about');
+
 
 
 Route::post('/uploadfile', 'HomeController@uploadfile')->name('uploadFile');

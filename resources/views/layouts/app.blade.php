@@ -44,11 +44,14 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">Главная</a>
+                            <a class="nav-link{{{ Request::is('/') ? ' active' : '' }}}" href="{{ url('/') }}">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('articles') }}">Статьи</a>
-                        </li>
+                            <a class="nav-link{{{ Request::is('article*') ? ' active' : '' }}}" href="{{ route('articles') }}">Статьи</a>
+												</li>
+                        <li class="nav-item">
+                            <a class="nav-link{{{ Route::is('about') ? ' active' : '' }}}" href="{{ route('about') }}">О проекте</a>
+												</li>
 
                     </ul>
 
