@@ -21,10 +21,10 @@
   <link rel="stylesheet" href="{{ asset('/css/select2.min.css') }}" crossorigin="anonymous">
   <script defer src="{{ asset('/js/fontawesome.min.js') }}" crossorigin="anonymous"></script>
   <!-- User style -->
-  <link rel="stylesheet" href="{{ asset('/css/dashboard.css') }}" crossorigin="anonymous">
-
   <link rel="stylesheet" href="{{ asset('/css/redactor.min.css') }}" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ asset('/css/filemanager.min.css') }}" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ asset('/css/filemanager.min.css') }}" crossorigin="anonymous">
+	
+  <link rel="stylesheet" href="{{ asset('/css/dashboard.css') }}" crossorigin="anonymous">
 
   <title>@yield('title')</title>
 </head>
