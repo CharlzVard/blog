@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title',"CVBlog | Home")
+@section('title',"CVBlog | Блог товарища C.V., в котором он хранит свои мысли")
 
 @section('content')
 
