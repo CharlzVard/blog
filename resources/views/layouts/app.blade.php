@@ -6,7 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="@yield('meta_description','Здесь Вы увидите различную информацию, которая Вам скорее всего не пригодится.')">
     <meta name="keywords" content="@yield('meta_keywords','Life, Blog, WEB, Laravel, PHP, HTML, VPS, Блог, Жизнь')">
-    <meta name="author" content="Charlz Vard">
+		<meta name="author" content="Charlz Vard">
+		<link rel="canonical" href="https://dagon.su"/>
     <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
     <!--[if IE]><link rel="shortcut icon" href="{{ asset('/favicon-32x32.png') }}"><![endif]-->
     <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
