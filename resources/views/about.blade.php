@@ -2,7 +2,7 @@
 
 @section('title',"CVBlog | About")
 
-@section('keywords',"Blog,Charlz,Vard,PHP,HTML,CSS,XML,JavaScript,Laravel, статьи, категории, лабуда, о проекте")
+@section('meta_keywords',"Blog,Charlz,Vard,PHP,HTML,CSS,XML,JavaScript,Laravel, статьи, категории, лабуда, о проекте")
 @section('canonical',url()->current())
 
 @section('content')

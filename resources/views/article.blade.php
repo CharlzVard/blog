@@ -5,8 +5,8 @@
 @else
 @section('title',"CVBlog | $article->title")
 @endif
-@section('description',$article->meta_description)
-@section('keywords',$article->meta_keywords)
+@section('meta_description',$article->meta_description)
+@section('meta_keywords',$article->meta_keywords)
 @section('canonical',url()->current())
 
 @section('content')
