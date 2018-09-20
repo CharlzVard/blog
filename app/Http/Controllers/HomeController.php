@@ -42,16 +42,17 @@ class HomeController extends Controller
         foreach($_FILES["file"]["name"] as $key=>$tmp_name){
 
             $filename = $_FILES["file"]["name"][$key];
-            $filename_tmp = $_FILES['file']['tmp_name'][$key];
+						$filename_tmp = $_FILES['file']['tmp_name'][$key];
+						$timestamp = date("Y_m_d__H_i_s_");
 
             $ext=pathinfo($filename,PATHINFO_EXTENSION);
             if (in_array($ext,$extension)){
-                if (!file_exists($directory.$filename).".".$ext){
-                    if (move_uploaded_file($filename_tmp,$directory.$filename).".".$ext){
+                if (!file_exists($directory.$timestamp.$filename).".".$ext){
+                    if (move_uploaded_file($filename_tmp,$directory.$timestamp.$filename).".".$ext){
                         array_push($files, [
                             'file-'.$key => [
                                 'name' => $filename,
-                                'url' => url($directory.$filename),
+                                'url' => url($directory.$timestamp.$filename),
                                 'id' => rand(100000, 999999)
                             ]
                         ]);
@@ -165,16 +166,17 @@ class HomeController extends Controller
         foreach($_FILES["file"]["name"] as $key=>$tmp_name){
 
             $filename = $_FILES["file"]["name"][$key];
-            $filename_tmp = $_FILES['file']['tmp_name'][$key];
+						$filename_tmp = $_FILES['file']['tmp_name'][$key];
+						$timestamp = date("Y_m_d__H_i_s_");
 
             $ext=pathinfo($filename,PATHINFO_EXTENSION);
             if (in_array($ext,$extension)){
-                if (!file_exists($directory.md5($filename).".".$ext)){
-                    if (move_uploaded_file($filename_tmp,$directory.md5($filename).".".$ext)){
-                        resizeImage($directory.md5($filename).".".$ext,96,96);
+                if (!file_exists($directory.md5($timestamp.$filename).".".$ext)){
+                    if (move_uploaded_file($filename_tmp,$directory.md5($timestamp.$filename).".".$ext)){
+                        resizeImage($directory.md5($timestamp.$filename).".".$ext,96,96);
                         $rand = rand(100000, 999999);
                         $files[$rand] = [
-                            'url' => url($directory.md5($filename).".".$ext),
+                            'url' => url($directory.md5($timestamp.$filename).".".$ext),
                             'id' => $rand
                         ];
                     }

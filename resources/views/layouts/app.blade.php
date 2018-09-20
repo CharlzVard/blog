@@ -3,9 +3,9 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="@yield('meta_description')">
-    <meta name="keywords" content="@yield('meta_keywords')">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="@yield('meta_description','Здесь Вы увидите различную информацию, которая Вам скорее всего не пригодится.')">
+    <meta name="keywords" content="@yield('meta_keywords','Life, Blog, WEB, Laravel, PHP, HTML, VPS, Блог, Жизнь')">
     <meta name="author" content="Charlz Vard">
     <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
     <!--[if IE]><link rel="shortcut icon" href="{{ asset('/favicon-32x32.png') }}"><![endif]-->
@@ -17,7 +17,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title')</title>
+    <title>@yield('title','Блог товарища C.V., в котором он хранит свои мысли')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

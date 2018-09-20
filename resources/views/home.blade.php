@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title',"CVBlog | Home")
+@section('title',"CVBlog | Блог товарища C.V., в котором он хранит свои мысли")
 
 @section('content')
 <div class="container">
@@ -26,7 +26,8 @@
                         <p class="m-0">Скоро домой, {{ \Auth::user()->name }}...</p>
                     @elseif(date("H")>=17 && date("H")<24)
                         <p class="m-0">{{ \Auth::user()->name }}, оно тебе точно надо?</p>
-                    @endif
+										@endif
+										
                 </div>
             </div>
         </div>

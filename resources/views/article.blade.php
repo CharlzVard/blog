@@ -1,11 +1,14 @@
 @extends('layouts.app')
 
+@if($article->meta_title)
+@section('title',"CVBlog | $article->meta_title")
+@else
 @section('title',"CVBlog | $article->title")
+@endif
 @section('description',$article->meta_description)
 @section('keywords',$article->meta_keywords)
 
 @section('content')
-
 <div class="container">
 	<div class="card">
 		<div class="card-header">
