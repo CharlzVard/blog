@@ -7,6 +7,7 @@
 @endif
 @section('description',$article->meta_description)
 @section('keywords',$article->meta_keywords)
+@section('canonical',url()->current())
 
 @section('content')
 <div class="container">

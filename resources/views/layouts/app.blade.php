@@ -11,7 +11,7 @@
 	<meta name="keywords" content="@yield('meta_keywords','Life, Blog, WEB, Laravel, PHP, HTML, VPS, Блог, Жизнь')">
 	<meta name="author" content="Charlz Vard">
 	
-	<link rel="canonical" href="https://dagon.su"/>
+	<link rel="canonical" href="@yield('canonical','https://dagon.su')"/>
 	
 	<!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
 	<!--[if IE]><link rel="shortcut icon" href="{{ asset('/favicon-32x32.png') }}"><![endif]-->

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title',"CVBlog | About")
+@section('canonical',url()->current())
 
 @section('content')
 

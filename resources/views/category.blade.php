@@ -3,6 +3,7 @@
 @section('title',"CVBlog | $category->title")
 @section('description',"Здесь находится информация, приоритет которой недостаточно высокий, чтобы её запоминать. -C.V.")
 @section('keywords',"Blog,Charlz,Vard,PHP,HTML,CSS,XML,JavaScript,Laravel")
+@section('canonical',url()->current())
 
 @section('content')
 
