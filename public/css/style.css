@@ -4,3 +4,7 @@ pre{
 	border-radius: 5px;
 	color: #e8e8e8;
 }
+
+.article{
+	min-height: 150px;
+}

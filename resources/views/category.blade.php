@@ -36,7 +36,7 @@
 			<div class="row">
 				@forelse($articles as $article)
 				<div class="col-md-4">
-					<div class="card">
+					<div class="card mb-3 article">
 						<div class="card-body">
 							<h4 class="card-title">{{ $article->title }}</h4>
 							<p class="card-text">
