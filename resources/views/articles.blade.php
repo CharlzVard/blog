@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title',"CVBlog | Статьи")
-@section('description',"Здесь находится информация, приоритет которой недостаточно высокий, чтобы её запоминать. -C.V.")
+@section('description',"Каталог статей, в которых находится информация, приоритет которой недостаточно высокий, чтобы её запоминать. -C.V.")
 @section('keywords',"Blog,Charlz,Vard,PHP,HTML,CSS,XML,JavaScript,Laravel")
 @section('canonical',url()->current())
 
@@ -10,7 +10,7 @@
 <div class="container">
 	<div class="card">
 		<div class="card-header text-center">
-			<h4 class="m-0">Статьи</h4>
+			<h1 class="mb-1">Статьи</h1>
 		</div>
 		<div class="card-body">
 			<div class="row">

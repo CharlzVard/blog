@@ -10,6 +10,7 @@
 <div class="container">
 	<div class="card">
 		<div class="card-header text-center">
+			<h1 class="mb-3">Статьи категории {{ $category->title }} </h1>
 			@component('components.breadcrumb')
 			@slot('parents', $parents)
 			@slot('active') {{ "Все категории" }} @endslot

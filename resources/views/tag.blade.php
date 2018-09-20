@@ -8,7 +8,7 @@
 <div class="container">
 	<div class="card">
 		<div class="card-header text-center">
-			<h4 class="m-0">Статьи с тегом "{{ $tag }}"</h4>
+			<h1 class="mb-1">Статьи с тегом "{{ $tag }}"</h1>
 		</div>
 		<div class="card-body">
 			<div class="row">

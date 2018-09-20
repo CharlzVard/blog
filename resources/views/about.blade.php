@@ -10,7 +10,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-									О проекте
+									<h1>О проекте</h1>
 								</div>
                 <div class="card-body">
 									<p>На данном ресурсе находится блог товарища C.V.</p>
