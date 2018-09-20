@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title',"CVBlog | Поиск по тегам")
+@section('title',"CVBlog | Поиск по тегу $tag")
 @section('canonical',url()->current())
 
 @section('content')
