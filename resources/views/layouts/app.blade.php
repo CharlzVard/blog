@@ -82,6 +82,8 @@
 	</nav>
 	<main class="py-4">
 		@yield('content')
+		<i class="fas fa-address-card"></i>
+		
 	</main>
 </div>
 
