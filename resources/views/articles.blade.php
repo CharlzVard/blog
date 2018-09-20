@@ -2,7 +2,7 @@
 
 @section('title',"CVBlog | Статьи")
 @section('description',"Каталог статей, в которых находится информация, приоритет которой недостаточно высокий, чтобы её запоминать. -C.V.")
-@section('keywords',"Blog,Charlz,Vard,PHP,HTML,CSS,XML,JavaScript,Laravel")
+@section('keywords',"Blog,Charlz,Vard,PHP,HTML,CSS,XML,JavaScript,Laravel,Статьи")
 @section('canonical',url()->current())
 
 @section('content')

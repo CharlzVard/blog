@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title',"CVBlog | Блог товарища C.V., в котором он хранит свои мысли")
+@section('keywords',"Blog,Charlz,Vard,PHP,HTML,CSS,XML,JavaScript,Laravel, статьи, категории, лабуда")
 @section('canonical',url()->current())
 
 @section('content')

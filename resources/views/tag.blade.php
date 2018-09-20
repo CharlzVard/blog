@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title',"CVBlog | Поиск по тегу $tag")
+@section('description',"Здесь находится информация по тегу $tag, приоритет которой недостаточно высокий, чтобы её запоминать. -C.V.")
 @section('canonical',url()->current())
 
 @section('content')

@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('title',"CVBlog | $category->title")
-@section('description',"Здесь находится информация, приоритет которой недостаточно высокий, чтобы её запоминать. -C.V.")
-@section('keywords',"Blog,Charlz,Vard,PHP,HTML,CSS,XML,JavaScript,Laravel")
+@section('description',"Здесь находится информация по категории $category->title, приоритет которой недостаточно высокий, чтобы её запоминать. -C.V.")
+@section('keywords',"Blog,Charlz,Vard,PHP,HTML,CSS,XML,JavaScript,Laravel, категории")
 @section('canonical',url()->current())
 
 @section('content')
