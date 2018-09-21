@@ -41,19 +41,19 @@
 		</div>
 		<div class="card-footer text-muted">
 			<div class="row align-items-center">
-				<div class="col-md-4">
+				<div class="col">
 					@if($prevarticle!==null)
 					<a class="" href="{{ route('articleShow',$prevarticle->slug) }}">&laquo; {{ $prevarticle->title }}</a>
 					@endif
 				</div>
-				<div class="col-md-4 text-center">
+				<div class="col-md-auto text-center mb-xl-0 mt-xl-0 mt-3 mb-3">
 					<input class="btn btn-secondary" type="button" onclick="history.back();" value="Назад"/>
 					@guest
 					@else
 					<a class="btn btn-primary" href="{{ route('admin.article.edit',$article) }}">Редактировать</a>
 					@endguest
 				</div>
-				<div class="col-md-4 text-right">
+				<div class="col text-right">
 					@if($nextarticle!==null)
 					<a class="" href="{{ route('articleShow',$nextarticle->slug) }}">{{ $nextarticle->title }} &raquo; </a>
 					@endif
