@@ -10,9 +10,9 @@
       <div class="container">
         <h1 class="display-3">-C.V. Blog!</h1>
         <blockquote class="blockquote">
-          <p class="mb-0">Here is information, the priority of which is not high enough to remember it.</p>
+          <p>Here is information, the priority of which is not high enough to remember it.</p>
         </blockquote>
-        <p class="lead">
+        <p class="lead m-0">
           <a class="btn btn-outline-dark btn-lg" href="{{ route('articles') }}" role="button">Оно тебе не надо &raquo;</a>
         </p>
       </div>
@@ -21,7 +21,7 @@
     <div class="container">
       <div class="row">
       @forelse($articles as $article)
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="card mb-3 article">
             <div class="card-body">
               <h4 class="card-title">{{ $article->title }}</h4>
