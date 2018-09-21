@@ -42,7 +42,7 @@
 
       <hr>
 
-      <div class="col-12"><p>©Vard, 2007-{{ date("Y") }}</p></div>
+      <div class="col-12"><p class="m-0">©Vard, 2007-{{ date("Y") }}</p></div>
 
     </div>
 @endsection
