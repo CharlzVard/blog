@@ -105,7 +105,7 @@ class ArticleController extends Controller
           $article->categories()->attach($request->input('categories'));
         endif;
 
-        return redirect()->back();
+        return redirect()->route('articleShow', $article->slug);
     }
 
     /**

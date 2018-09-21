@@ -63,8 +63,8 @@
 	</div>
 </div>
 
-/* Responsive images and tables in article by Bootstrap 4 */
 <script>
+	/* Responsive images and tables in article by Bootstrap 4 */
 	window.onload = function() {
 		var images = document.querySelectorAll('figure > img');
 		for(var i = 0; i < images.length; i++){
