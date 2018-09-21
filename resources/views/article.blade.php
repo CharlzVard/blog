@@ -63,4 +63,18 @@
 	</div>
 </div>
 
+/* Responsive images and tables in article by Bootstrap 4 */
+<script>
+	window.onload = function() {
+		var images = document.querySelectorAll('figure > img');
+		for(var i = 0; i < images.length; i++){
+			images[i].classList.add("img-fluid");
+		}
+		var tables = document.getElementsByTagName('table');
+		for(var i = 0; i < tables.length; i++){
+			tables[i].classList.add("table", "table-responsive", "table-bordered", "table-striped");
+		}
+	}
+</script>
+
 @endsection
