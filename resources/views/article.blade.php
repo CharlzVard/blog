@@ -15,8 +15,8 @@
 		<div class="card-header">
 			@if($article->published)
 			<div class="row align-items-center justify-content-between">
-				<div class="col-auto"><h1 class="m-0">{!! $article->title !!}</h1></div>
-				<div class="col-auto"><p class="text-right m-0">{{ \App\User::whereId($article->created_by)->first()->name }}, {{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $article->created_at)->format('d.m.Y / H:i') }}</p><p class="m-0 text-right"><small class="text-muted">Просмотров: {{ $article->viewed ?? "0" }} </small></p></div>
+				<div class="col"><h1 class="m-0">{!! $article->title !!}</h1></div>
+				<div class="col-xl-auto mt-3 mt-xl-0"><p class="text-right m-0">{{ \App\User::whereId($article->created_by)->first()->name }}, {{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $article->created_at)->format('d.m.Y / H:i') }}</p><p class="m-0 text-right"><small class="text-muted">Просмотров: {{ $article->viewed ?? "0" }} </small></p></div>
 			</div>
 			@else
 			<h5 class="text-center">Ошибка доступа</h5>
