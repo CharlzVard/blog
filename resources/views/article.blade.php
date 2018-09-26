@@ -77,4 +77,67 @@
 	}
 </script>
 
+<script>
+	/* Копия из pre */
+	function copy(str){
+	let tmp   = document.createElement('INPUT'),
+		focus = document.activeElement;
+	tmp.value = str;
+	document.body.appendChild(tmp);
+	tmp.select();
+	document.execCommand('copy');
+	document.body.removeChild(tmp);
+	focus.focus();
+	}
+
+	function setSelection(target) {
+		var rng, sel;
+		if (document.createRange) {
+			rng = document.createRange();
+			rng.selectNode(target)
+			sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(rng);
+		} else {
+			var rng = document.body.createTextRange();
+			rng.moveToElementText(target);
+			rng.select();
+		}
+	}
+
+
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		var pre = document.getElementsByTagName('pre');
+		for(let i=0; i<pre.length; i++){
+			pre[i].ondblclick = function(){
+				try{
+					let el = this;
+					copy(el.innerHTML);
+					let text = el.innerHTML;
+					el.innerHTML = "Текст скопирован в буфер обмена!";
+					el.classList.add('alert','alert-success');
+					setTimeout(function (self){
+						el.innerHTML = text;
+						setSelection(el);
+						el.classList.remove('alert','alert-success');
+					},1000);
+				}catch(e){
+					let el = this;
+					let text = el.innerHTML;
+					el.innerHTML = "Ошибка при копировании в буфер обмена!";
+					el.classList.add('alert','alert-danger');
+					setTimeout(function (self){
+						el.innerHTML = text;
+						setSelection(el);
+						el.classList.remove('alert','alert-danger');
+					},1000);
+				}
+			}
+		};
+					
+	
+	
+	});
+</script>
+
 @endsection
