@@ -105,11 +105,10 @@
 		}
 	}
 
-
 	document.addEventListener("DOMContentLoaded", function(event) { 
 		var pre = document.getElementsByTagName('pre');
 		for(let i=0; i<pre.length; i++){
-			pre[i].ondblclick = function(){
+			pre[i].addEventListener('dblclick',function(){
 				try{
 					let el = this;
 					copy(el.innerHTML);
@@ -124,7 +123,7 @@
 				}catch(e){
 					let el = this;
 					let text = el.innerHTML;
-					el.innerHTML = "Ошибка при копировании в буфер обмена!";
+					el.innerHTML = e;
 					el.classList.add('alert','alert-danger');
 					setTimeout(function (self){
 						el.innerHTML = text;
@@ -132,11 +131,8 @@
 						el.classList.remove('alert','alert-danger');
 					},1000);
 				}
-			}
+			});
 		};
-					
-	
-	
 	});
 </script>
 

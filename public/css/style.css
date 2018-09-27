@@ -1,9 +1,15 @@
 pre{
 	background-color: #444;
 	padding: 10px;
+	border: 1px solid #111;
 	border-radius: 5px;
 	color: #e8e8e8;
 }
+
+pre.alert{
+	padding: 10px;
+}
+
 .article{
 	min-height: 150px;
 }
