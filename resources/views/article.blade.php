@@ -86,9 +86,10 @@
 			pre[i].addEventListener('dblclick', function(event) {
 				copyToClipboard(this.innerHTML.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">"));
 				this.animate([
-					{ backgroundColor: '#444'}, 
-					{ backgroundColor: '#484'},
-					{ backgroundColor: '#444'}		
+					{ backgroundColor: '#494'}, 
+					{ backgroundColor: '#4a4'},
+					{ backgroundColor: '#4a4'},
+					{ backgroundColor: '#444'}	
 				], {
 					duration: 1500
 				});
