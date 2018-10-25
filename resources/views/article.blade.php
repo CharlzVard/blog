@@ -79,21 +79,21 @@
 
 <script>
 	/* Copy from pre on dblclick */
-	const copyToClipboard=str=>{const el=document.createElement('textarea');el.value=str;el.setAttribute('readonly','');el.style.position='absolute';el.style.left='-9999px';document.body.appendChild(el);const selected=document.getSelection().rangeCount>0?document.getSelection().getRangeAt(0):!1;el.select();document.execCommand('copy');document.body.removeChild(el);if(selected){document.getSelection().removeAllRanges();document.getSelection().addRange(selected)}}
+	const copyToClipboard=str=>{const el=document.createElement('textarea');el.value=str;el.setAttribute('readonly','');el.style.position='absolute';el.style.left='-9999px';document.body.appendChild(el);el.select();document.execCommand('copy');document.body.removeChild(el);}
 
 	var pre = document.querySelectorAll('pre');
 	for (var i = 0; i < pre.length; i++) {
-			pre[i].addEventListener('dblclick', function(event) {
-				copyToClipboard(this.innerHTML.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">"));
-				this.animate([
-					{ backgroundColor: '#494'}, 
-					{ backgroundColor: '#4a4'},
-					{ backgroundColor: '#4a4'},
-					{ backgroundColor: '#444'}	
-				], {
-					duration: 1500
-				});
+		pre[i].addEventListener('dblclick', function(event) {
+			copyToClipboard(this.innerHTML.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">"));
+			this.animate([
+				{ backgroundColor: '#494'}, 
+				{ backgroundColor: '#4a4'},
+				{ backgroundColor: '#4a4'},
+				{ backgroundColor: '#444'}	
+			], {
+				duration: 1500
 			});
+		});
 	}
 </script>
 
